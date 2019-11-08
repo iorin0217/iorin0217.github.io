@@ -1,8 +1,8 @@
 {
-  "name": "dans-blog",
-  "description": "A Gatsby starter for a personal blog",
+  "name": "iori-kuratas-website",
+  "description": "personal website",
   "author": {
-    "name": "Dan Levy",
+    "name": "Iori Kurata",
     "url": "https://iorin0217.github.io/blog/"
   },
   "repository": "https://github.com/iorin0217/iorin0217.github.io",
@@ -19,7 +19,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "lint-errors": "eslint src/**/*.{js,jsx} --quiet",
     "lint": "eslint src/**/*.{js,jsx}",
-    "generate-app-icons": "sh ./scripts/generate-app-icons.sh"
+    "generate-app-icons": "sh ./scripts/generate-app-icons.sh",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "@babel/runtime": "^7.2.0",
@@ -37,7 +38,7 @@
     "eslint-plugin-react": "^7.10.0",
     "prettier": "^1.13.7",
     "sharp-cli": "^1.7.0",
-    "webpack-bundle-analyzer": "^2.13.1"
+    "webpack-bundle-analyzer": "^3.3.2"
   },
   "dependencies": {
     "minipass": "2.7.0",
@@ -78,7 +79,7 @@
     "gatsby-transformer-sharp": "^1.6.27",
     "hoek": "^5.0.3",
     "instantsearch.css": "^7.1.0",
-    "marked": "^0.5.1",
+    "marked": "^0.6.1",
     "prismjs": "^1.15.0",
     "react-custom-scrollbars": "^4.2.1",
     "react-facebook": "^5.0.3",

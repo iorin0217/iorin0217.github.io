@@ -1,36 +1,36 @@
 const colors = require("../../src/styles/colors");
 
 module.exports = {
-  siteTitle: "Dan Levy's Articles, Guides and Cats", // <title>
-  shortSiteTitle: "Dan Levy's Programming Blog", // <title> ending for posts and pages
-  siteDescription: "Come for the JavaScript, stay for the cat memes.",
+  siteTitle: "Iori Kurata's website", // <title>
+  shortSiteTitle: "Iori Kurata's website", // <title> ending for posts and pages
+  siteDescription: "Physics & Machine Learning",
   siteUrl: "https://iorin0217.github.io",
   pathPrefix: "/blog",
-  disqusShortname: "danlevy-1",
+  disqusShortname: "https-iorin0217-github-io",
   // siteImage: "preview.jpg",
-  siteLanguage: "en",
+  siteLanguage: "ja",
   // author
-  authorName: "Dan Levy",
-  authorTwitterAccount: "justsml",
+  authorName: "Iori Kurata",
+  authorTwitterAccount: "PES217i",
   // info
-  infoTitle: "dan levy",
-  infoTitleNote: "fights for the user",
+  infoTitle: "Iori Kurata",
+  infoTitleNote: "Physics & Machine Learning",
   // manifest.json
-  manifestName: "Dan Levy's Personal Blog",
-  manifestShortName: "DansSite", // max 12 characters
+  manifestName: "Iori Kurata's website",
+  manifestShortName: "IorisSite", // max 12 characters
   manifestStartUrl: "/",
   manifestBackgroundColor: colors.background,
   manifestThemeColor: colors.background,
   manifestDisplay: "standalone",
   // contact
-  contactEmail: "dan@danlevy.net",
+  contactEmail: "",
   // social
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/justsml" },
-    { name: "twitter", url: "https://twitter.com/justsml" },
+    { name: "github", url: "https://github.com/iorin0217" },
+    { name: "twitter", url: "https://twitter.com/PES217i" },
     {
       name: "youtube",
-      url: "https://www.youtube.com/user/justsml/videos?shelf_id=0&amp;sort=dd&amp;view=0"
+      url: ""
     }
   ]
 };
