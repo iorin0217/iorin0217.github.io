@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
+import "katex/dist/katex.min.css";
 
 const styles = theme => ({
   article: {

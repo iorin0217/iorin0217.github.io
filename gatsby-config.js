@@ -31,7 +31,6 @@ const queries = [
 ];
 
 module.exports = {
-  pathPrefix: config.pathPrefix,　//for gh-pages
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,

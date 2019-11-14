@@ -5,7 +5,7 @@ module.exports = {
   shortSiteTitle: "Iori Kurata's website", // <title> ending for posts and pages
   siteDescription: "Physics & Machine Learning",
   siteUrl: "https://iorin0217.github.io",
-  pathPrefix: "/blog",
+  pathPrefix: "",
   disqusShortname: "https-iorin0217-github-io",
   // siteImage: "preview.jpg",
   siteLanguage: "ja",
@@ -27,10 +27,6 @@ module.exports = {
   // social
   authorSocialLinks: [
     { name: "github", url: "https://github.com/iorin0217" },
-    { name: "twitter", url: "https://twitter.com/PES217i" },
-    {
-      name: "youtube",
-      url: ""
-    }
+    { name: "twitter", url: "https://twitter.com/PES217i" }
   ]
 };

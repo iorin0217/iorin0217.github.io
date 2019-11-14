@@ -41,6 +41,7 @@
     "webpack-bundle-analyzer": "^3.3.2"
   },
   "dependencies": {
+    "katex": "^0.10.2",
     "minipass": "2.7.0",
     "sharp": "^0.23.0",
     "@material-ui/core": "^3.6.2",
@@ -71,6 +72,7 @@
     "gatsby-remark-embed-gist": "^1.1.2",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^1.5.67",
+    "gatsby-remark-katex": "^3.1.10",
     "gatsby-remark-prismjs": "^2.0.5",
     "gatsby-remark-responsive-iframe": "^1.4.20",
     "gatsby-remark-smartypants": "^1.4.10",
