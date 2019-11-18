@@ -120,7 +120,7 @@ const Tags = ({ pathContext, data, classes }) => {
               // slugify
               return (
                 <li key={node.slug}>
-                  <Link to={`/${slugify(slugStr)}/`}>
+                  <Link to={`${slugify(slugStr)}`}>
                     <label title={node.subTitle}>{node.title}</label>
                     <span title={`Created ${createdAgo} ago\nLast Modified ${modifiedAgo} ago`}>
                       {modifiedAgo} ago
@@ -142,7 +142,7 @@ const Tags = ({ pathContext, data, classes }) => {
   );
 };
 
-Tags.propTypes = {
+/*Tags.propTypes = {
   classes: PropTypes.object.isRequired,
   pathContext: PropTypes.shape({
     tag: PropTypes.string.isRequired
@@ -162,7 +162,7 @@ Tags.propTypes = {
       )
     })
   })
-};
+};*/
 
 export default injectSheet(styles)(Tags);
 // export default Tags;

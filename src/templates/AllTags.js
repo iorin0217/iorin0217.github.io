@@ -69,10 +69,10 @@ const styles = theme => ({
 });
 
 class AllTags extends React.Component {
-  static propTypes = {
+  /*static propTypes = {
     data: PropTypes.object.isRequired,
     classes: PropTypes.object.isRequired
-  };
+  };*/
 
   state = {
     sortBy: "totalCount" //"fieldValue"

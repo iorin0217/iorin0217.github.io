@@ -6,6 +6,7 @@ import config from "../../../content/meta/config";
 
 import GithubIcon from "!svg-react-loader!../../images/svg-icons/github.svg?name=GithubIcon";
 import TwitterIcon from "!svg-react-loader!../../images/svg-icons/twitter.svg?name=TwitterIcon";
+import EmailIcon from "!svg-react-loader!../../images/svg-icons/email.svg?name=EmailIcon";
 
 // import { FaYoutube } from "react-icons/fa";
 
@@ -38,7 +39,8 @@ const Socialcons = props => {
   const icons = {
     // facebook: FacebookIcon,
     twitter: TwitterIcon,
-    github: GithubIcon
+    github: GithubIcon,
+    gmail: EmailIcon
     // youtube: FaYoutube
   };
 

@@ -23,10 +23,11 @@ module.exports = {
   manifestThemeColor: colors.background,
   manifestDisplay: "standalone",
   // contact
-  contactEmail: "",
+  contactEmail: "iori-kurata636@g.ecc.u-tokyo.ac.jp",
   // social
   authorSocialLinks: [
     { name: "github", url: "https://github.com/iorin0217" },
-    { name: "twitter", url: "https://twitter.com/PES217i" }
+    { name: "twitter", url: "https://twitter.com/PES217i" },
+    { name: "gmail", url: "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=iori-kurata636@g.ecc.u-tokyo.ac.jp" }
   ]
 };
