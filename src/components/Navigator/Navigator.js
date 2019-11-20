@@ -121,7 +121,7 @@ class Navigator extends React.Component {
       <nav
         className={`${classes.navigator} ${navigatorPosition ? navigatorPosition : ""} ${
           navigatorShape ? navigatorShape : ""
-        } `}
+          } `}
       >
         {this.props.posts.length && (
           <List

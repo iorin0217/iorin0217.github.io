@@ -23,7 +23,7 @@ const styles = theme => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    padding: "1em 0 0",
+    padding: "3em 0 0",
     [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
       flexDirection: "row"
     }

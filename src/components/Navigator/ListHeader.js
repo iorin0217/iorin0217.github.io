@@ -44,7 +44,7 @@ const styles = theme => ({
   filter: {
     margin: `0 calc(-.5rem + ${theme.base.sizes.linesMargin}) 1em calc(-.5rem + ${
       theme.base.sizes.linesMargin
-    })`,
+      })`,
     position: "relative",
     fontSize: "1.2em",
     lineHeight: 1,
@@ -67,7 +67,7 @@ const styles = theme => ({
         padding: "0 0 1em .5em",
         margin: `0 calc(-.5rem + ${theme.base.sizes.linesMargin}) 1em calc(-.5rem + ${
           theme.base.sizes.linesMargin
-        })`
+          })`
       }
     }
   },
@@ -85,7 +85,7 @@ const ListHeader = props => {
     <header>
       {navigatorShape === "closed" && (
         <div onClick={expandOnClick} className={classes.closed}>
-          <h3>List of posts</h3>
+          <h3>Table of contents</h3>
           <IconButton
             aria-label="Expand the list"
             className={classes.expand}
