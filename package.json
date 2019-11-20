@@ -43,7 +43,6 @@
   "dependencies": {
     "katex": "^0.10.2",
     "minipass": "2.7.0",
-    "sharp": "^0.23.0",
     "@material-ui/core": "^3.6.2",
     "@material-ui/icons": "^3.0.1",
     "color": "^3.0.0",
