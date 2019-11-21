@@ -6,8 +6,6 @@ import LazyLoad from "react-lazyload";
 import format from "date-fns/format";
 import distanceInWords from "date-fns/distance_in_words";
 
-import utf8 from "utf8"
-
 const getDateLabel = (date, label, className = "text-left") => {
     if (!date) return <span date={date} />;
 
@@ -255,7 +253,7 @@ class Toc extends React.Component {
                 key={post.node.fields.slug}
             >
                 {typeof window !== `undefined` &&
-                    post.node.fields.slug !== window.location.pathname &&
+                    post.node.fields.slug !== decodeURI(window.location.pathname) &&
                     <Link
                         activeClassName="active"
                         className={classes.listLink}
@@ -263,7 +261,7 @@ class Toc extends React.Component {
                         onClick={linkOnClick}
                     >
                         <div className={classes.listItemText}>
-                            <h1>{post.node.fields.slug},{decodeURI(window.location.pathname)}</h1>
+                            <h1>{post.edes.node.tableOfContents}</h1>
                         </div>
                     </Link>
                 }
