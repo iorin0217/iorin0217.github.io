@@ -4,10 +4,20 @@ menuTitle: About
 ---
 
 # 興味
-
+量子情報/実験系制御/機械学習/計算物性物理それぞれと、これらの境界領域
 ## できること
+- pythonによる計算実験及びシステム開発@AWSインフラ
+- 第一原理計算の環境構築とスパコンでの実行
+- このページをデプロイする程度のweb開発
+- 中規模なアナログ回路の設計〜評価
+- 小規模な光学系のアライメント
+- 高圧合成
+- JetBot程度の3DCAD/ROS
 ## やりたいこと
-
+- kaggle
+- atcoder
+- ラボラトリーオートメーション
+- FPGA
 # 略歴
 
 ## 学歴
@@ -34,6 +44,10 @@ NISQアルゴリズムに関する研究
 ### [PFN](https://preferred.jp/ja/)
 マテリアルズインフォマティクスに関する研究
 # 論文・学会発表
-- 卒論
-- 日物
-- Green function
+- 「100 MHz クロック量子コンピュータ実現に向けた広帯域低雑音ホモダイン検出器の研究」\
+  卒業論文
+- 「新規層状ペロブスカイト型4d遷移金属酸化物の高圧合成と電子状態の研究」\
+  日本物理学会 第74回年次大会 口頭発表
+- Suguru Endo, **Iori Kurata**, Yuya O. Nakagawa\
+  "Calculation of the Green's function on near-term quantum computers"\
+  [arXiv:1909.12250](https://arxiv.org/abs/1909.12250)
