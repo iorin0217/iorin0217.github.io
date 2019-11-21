@@ -1,0 +1,2 @@
+webpackJsonp([55702396619907],{768:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Iori Kurata's website"}},allMarkdownRemark:{group:[{fieldValue:"js",totalCount:2},{fieldValue:"js-a",totalCount:1},{fieldValue:"う",totalCount:1}]}},pathContext:{}}}});
+//# sourceMappingURL=path---tags-e152d00d3b1e3e2cf946.js.map
