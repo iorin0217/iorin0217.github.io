@@ -55,9 +55,13 @@ class TopMenu extends React.Component {
   render() {
     let { classes, pages, posts } = this.props;
     const { anchorEl, open } = this.state;
+    const targetlist = ["/", "/search/", "/tag/", "/about/"]
 
     pages = pages.filter(hasMenuTitle);
-
+    typeof window !== `undefined` && (
+      post = posts.find(element => element.node.fields.slug == decodeURI(window.location.pathname)));
+    typeof window !== `undefined` && (
+      flag = targetlist.some((v) => v === window.location.pathname));
     return (
       <nav className={classes.topMenu}>
         <Manager>
@@ -80,7 +84,7 @@ class TopMenu extends React.Component {
             <ClickAwayListener onClickAway={this.handleClose}>
               <Grow in={open} id="menu-list" style={{ transformOrigin: "0 0 0" }}>
                 <Paper>
-                  {typeof window !== `undefined` && window.location.pathname == "/" &&
+                  {typeof window !== `undefined` && flag &&
                     <MenuList role="menu">
                       <MenuItem
                         onClick={e => {
@@ -122,12 +126,11 @@ class TopMenu extends React.Component {
                       </MenuItem>
                     </Link> */}
                     </MenuList>}
-                  {posts.map((post, i) => {
-                    typeof window !== `undefined` && post.node.fields.slug == decodeURI(window.location.pathname) &&
-                      <MenuList role="menu">
-                        <div>a</div>
-                      </MenuList>
-                  })}
+                  {typeof window !== `undefined` && post !== `undefined` &&
+                    <MenuList role="menu">
+                      <div>post.node.tableOfContents</div>
+                    </MenuList>
+                  }
                 </Paper>
               </Grow>
             </ClickAwayListener>
