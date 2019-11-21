@@ -261,7 +261,7 @@ class Toc extends React.Component {
                         onClick={linkOnClick}
                     >
                         <div className={classes.listItemText}>
-                            <h1>{post.edes.node.tableOfContents}</h1>
+                            <h1>{post.node.tableOfContents}</h1>
                         </div>
                     </Link>
                 }
