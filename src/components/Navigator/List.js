@@ -6,6 +6,7 @@ import { forceCheck } from "react-lazyload";
 import ListHeader from "./ListHeader";
 import SpringScrollbars from "../SpringScrollbars";
 import ListItem from "./ListItem";
+import Toc from "./Toc";
 
 const styles = theme => ({
   posts: {
@@ -73,15 +74,23 @@ class List extends React.Component {
               removeFilter={removeFilter}
             />
             <ul className={classes.list}>
-              {navigatorPosition == "is-aside" ? <div>{window.location.pathname}</div> : (posts &&
+              {navigatorPosition == "is-aside" ? (posts &&
                 posts.map((post, i) => (
-                  <ListItem
+                  <Toc
                     key={i}
                     post={post}
                     linkOnClick={linkOnClick}
                     categoryFilter={categoryFilter}
                   />
-                )))}
+                ))) : (posts &&
+                  posts.map((post, i) => (
+                    <ListItem
+                      key={i}
+                      post={post}
+                      linkOnClick={linkOnClick}
+                      categoryFilter={categoryFilter}
+                    />
+                  )))}
             </ul>
           </div>
         </SpringScrollbars>

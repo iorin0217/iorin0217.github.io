@@ -133,6 +133,7 @@ export const guery = graphql`
     ) {
       edges {
         node {
+          tableOfContents
           excerpt
           fields {
             slug
@@ -164,6 +165,7 @@ export const guery = graphql`
     ) {
       edges {
         node {
+          tableOfContents
           fields {
             slug
             prefix

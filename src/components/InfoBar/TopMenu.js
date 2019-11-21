@@ -80,37 +80,38 @@ class TopMenu extends React.Component {
             <ClickAwayListener onClickAway={this.handleClose}>
               <Grow in={open} id="menu-list" style={{ transformOrigin: "0 0 0" }}>
                 <Paper>
-                  <MenuList role="menu">
-                    <MenuItem
-                      onClick={e => {
-                        this.props.homeLinkOnClick(e);
-                        this.handleClose();
-                      }}
-                    >
-                      Home
+                  {typeof window !== `undefined` && window.location.pathname == "/" &&
+                    <MenuList role="menu">
+                      <MenuItem
+                        onClick={e => {
+                          this.props.homeLinkOnClick(e);
+                          this.handleClose();
+                        }}
+                      >
+                        Home
                     </MenuItem>
-                    {pages.map((page, i) => {
-                      const { fields, frontmatter } = page.node;
+                      {pages.map((page, i) => {
+                        const { fields, frontmatter } = page.node;
 
-                      return (
-                        <Link
-                          aria-label={frontmatter.title}
-                          key={fields.slug}
-                          to={fields.slug}
-                          style={{ display: "block" }}
-                        >
-                          <MenuItem
-                            onClick={e => {
-                              this.props.pageLinkOnClick(e);
-                              this.handleClose();
-                            }}
+                        return (
+                          <Link
+                            aria-label={frontmatter.title}
+                            key={fields.slug}
+                            to={fields.slug}
+                            style={{ display: "block" }}
                           >
-                            {frontmatter.menuTitle ? frontmatter.menuTitle : frontmatter.title}
-                          </MenuItem>
-                        </Link>
-                      );
-                    })}
-                    {/* <Link aria-label="Contact" to="/contact/" style={{ display: "block" }}>
+                            <MenuItem
+                              onClick={e => {
+                                this.props.pageLinkOnClick(e);
+                                this.handleClose();
+                              }}
+                            >
+                              {frontmatter.menuTitle ? frontmatter.menuTitle : frontmatter.title}
+                            </MenuItem>
+                          </Link>
+                        );
+                      })}
+                      {/* <Link aria-label="Contact" to="/contact/" style={{ display: "block" }}>
                       <MenuItem
                         onClick={e => {
                           this.props.pageLinkOnClick(e);
@@ -120,7 +121,11 @@ class TopMenu extends React.Component {
                         Contact
                       </MenuItem>
                     </Link> */}
-                  </MenuList>
+                    </MenuList>}
+                  {typeof window !== `undefined` && window.location.pathname !== "/" &&
+                    <MenuList role="menu">
+                      <div>a</div>
+                    </MenuList>}
                 </Paper>
               </Grow>
             </ClickAwayListener>
