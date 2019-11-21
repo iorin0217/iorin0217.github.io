@@ -1,2 +1,2 @@
-webpackJsonp([55702396619907],{773:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Iori Kurata's website"}},allMarkdownRemark:{group:[{fieldValue:"LaTeX",totalCount:1},{fieldValue:"js",totalCount:1},{fieldValue:"js-a",totalCount:1},{fieldValue:"markdown",totalCount:1},{fieldValue:"テスト投稿",totalCount:1}]}},pathContext:{}}}});
+webpackJsonp([55702396619907],{772:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Iori Kurata's website"}},allMarkdownRemark:{group:[{fieldValue:"LaTeX",totalCount:1},{fieldValue:"js",totalCount:1},{fieldValue:"js-a",totalCount:1},{fieldValue:"markdown",totalCount:1},{fieldValue:"テスト投稿",totalCount:1}]}},pathContext:{}}}});
 //# sourceMappingURL=path---tags-bf930d42e7bc8eac967a.js.map
