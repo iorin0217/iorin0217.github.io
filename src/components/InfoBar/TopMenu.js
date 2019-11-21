@@ -55,7 +55,7 @@ class TopMenu extends React.Component {
   render() {
     let { classes, pages, posts } = this.props;
     const { anchorEl, open } = this.state;
-    const targetlist = ["/", "/search/", "/tag/", "/about/"];
+    const targetlist = ["/", "/search/", "/tags/", "/about/"];
 
     pages = pages.filter(hasMenuTitle);
     const post = posts.find(element => element.node.fields.slug == decodeURI(typeof window !== `undefined` ? window.location.pathname : "hoge"));
@@ -127,7 +127,9 @@ class TopMenu extends React.Component {
                     </MenuList>}
                   {typeof window !== `undefined` && !flag && post !== `undefined` &&
                     <MenuList role="menu">
-                      <div>{post.node.tableOfContents}</div>
+                      <div dangerouslySetInnerHTML={{
+                        __html: post.node.tableOfContents
+                      }} />
                     </MenuList>
                   }
                 </Paper>
