@@ -60,8 +60,10 @@ class List extends React.Component {
       categoryFilter,
       navigatorPosition,
       navigatorShape,
-      removeFilter
+      removeFilter,
+      pages
     } = this.props;
+    const allarray = posts.concat(pages)
 
     return (
       <div className={classes.posts}>
@@ -74,8 +76,8 @@ class List extends React.Component {
               removeFilter={removeFilter}
             />
             <ul className={classes.list}>
-              {navigatorPosition == "is-aside" ? (posts &&
-                posts.map((post, i) => (
+              {navigatorPosition == "is-aside" ? (allarray &&
+                allarray.map((post, i) => (
                   <Toc
                     key={i}
                     post={post}

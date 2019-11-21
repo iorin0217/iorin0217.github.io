@@ -247,6 +247,7 @@ class Toc extends React.Component {
         const { classes, post, linkOnClick } = this.props;
         return (typeof window !== `undefined` &&
             post.node.fields.slug == decodeURI(window.location.pathname) &&
+            post.node.tableOfContents &&
             <div dangerouslySetInnerHTML={{
                 __html: post.node.tableOfContents
             }} />

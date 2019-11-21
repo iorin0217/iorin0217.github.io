@@ -88,7 +88,7 @@ class Layout extends React.Component {
     return (
       <LayoutWrapper>
         {children()}
-        <Navigator posts={data.posts.edges} />
+        <Navigator posts={data.posts.edges} pages={data.pages.edges} />
         <ActionsBar categories={this.categories} />
         <InfoBar pages={data.pages.edges} parts={data.parts.edges} />
         {this.props.isWideScreen && <InfoBox pages={data.pages.edges} parts={data.parts.edges} />}
