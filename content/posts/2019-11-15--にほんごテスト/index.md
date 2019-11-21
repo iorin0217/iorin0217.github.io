@@ -73,6 +73,6 @@ $$
 
 ## embed
 
-<iframe src="https://www.suijustfancy.com/entry/2019/11/21/173800" width="600" height="400"></iframe>
+<iframe src="https://mizchi.hatenablog.com/entry/2018/10/23/221446" width="600" height="400"></iframe>
 
-※適当にとってきた記事です
+※僕の記事ではない
