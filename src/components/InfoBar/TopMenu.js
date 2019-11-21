@@ -124,9 +124,9 @@ class TopMenu extends React.Component {
                     </MenuList>}
                   {posts.map((post, i) => {
                     typeof window !== `undefined` && post.node.fields.slug == decodeURI(window.location.pathname) &&
-                      <div dangerouslySetInnerHTML={{
-                        __html: post.node.tableOfContents
-                      }} />
+                      <MenuList role="menu">
+                        <div>a</div>
+                      </MenuList>
                   })}
                 </Paper>
               </Grow>
