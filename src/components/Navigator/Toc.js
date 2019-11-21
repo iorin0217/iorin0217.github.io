@@ -253,17 +253,10 @@ class Toc extends React.Component {
                 key={post.node.fields.slug}
             >
                 {typeof window !== `undefined` &&
-                    post.node.fields.slug !== decodeURI(window.location.pathname) &&
-                    <Link
-                        activeClassName="active"
-                        className={classes.listLink}
-                        to={post.node.fields.slug}
-                        onClick={linkOnClick}
-                    >
-                        <div className={classes.listItemText}>
-                            <h1>{post.node.tableOfContents}</h1>
-                        </div>
-                    </Link>
+                    post.node.fields.slug == decodeURI(window.location.pathname) &&
+                    <div dangerouslySetInnerHTML={{
+                        __html: query.data.allMarkdownRemark.edges[0].node.tableOfContents
+                    }} />
                 }
             </li>
         );
