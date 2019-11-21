@@ -117,7 +117,7 @@ module.exports = {
             options: {
               // Optional:
               // the github handler whose gists are to be accessed
-              username: "justsml",
+              username: "iorin0217",
               // a flag indicating whether the github default gist css should be included or not
               // default: true
               includeDefaultCss: true

@@ -73,6 +73,6 @@ $$
 
 ## embed
 
-<iframe src="https://mizchi.hatenablog.com/entry/2018/10/23/221446" width="600" height="400"></iframe>
+<iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fmizchi.hatenablog.com%2Fentry%2F2018%2F10%2F23%2F221446" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no"></iframe>
 
 ※僕の記事ではない
