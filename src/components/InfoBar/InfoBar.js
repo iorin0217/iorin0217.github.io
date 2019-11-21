@@ -70,7 +70,7 @@ class InfoBar extends React.Component {
   pageLinkOnClick = moveNavigatorAside.bind(this);
 
   render() {
-    const { classes, pages } = this.props;
+    const { classes, pages, posts } = this.props;
 
     return (
       <aside className={classes.infoBar}>
@@ -85,6 +85,7 @@ class InfoBar extends React.Component {
         </Link>
         <TopMenu
           pages={pages}
+          posts={posts}
           homeLinkOnClick={this.homeLinkOnClick}
           pageLinkOnClick={this.pageLinkOnClick}
         />

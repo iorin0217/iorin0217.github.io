@@ -53,7 +53,7 @@ class TopMenu extends React.Component {
   };
 
   render() {
-    let { classes, pages } = this.props;
+    let { classes, pages, posts } = this.props;
     const { anchorEl, open } = this.state;
 
     pages = pages.filter(hasMenuTitle);
@@ -122,10 +122,14 @@ class TopMenu extends React.Component {
                       </MenuItem>
                     </Link> */}
                     </MenuList>}
-                  {typeof window !== `undefined` && window.location.pathname !== "/" &&
-                    <MenuList role="menu">
-                      <div>a</div>
-                    </MenuList>}
+                  {posts.map((post, i) => {
+                    typeof window !== `undefined` && post.node.fields.slug == decodeURI(window.location.pathname) &&
+                      <MenuList role="menu">
+                        <div dangerouslySetInnerHTML={{
+                          __html: post.node.tableOfContents
+                        }} />
+                      </MenuList>
+                  })}
                 </Paper>
               </Grow>
             </ClickAwayListener>
