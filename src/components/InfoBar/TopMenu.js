@@ -125,9 +125,9 @@ class TopMenu extends React.Component {
                       </MenuItem>
                     </Link> */}
                     </MenuList>}
-                  {typeof window !== `undefined` && post !== `undefined` &&
+                  {typeof window !== `undefined` && !flag && post !== `undefined` &&
                     <MenuList role="menu">
-                      <div>post.node.tableOfContents</div>
+                      <div>{post.node.tableOfContents}</div>
                     </MenuList>
                   }
                 </Paper>
