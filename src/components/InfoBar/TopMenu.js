@@ -55,13 +55,13 @@ class TopMenu extends React.Component {
   render() {
     let { classes, pages, posts } = this.props;
     const { anchorEl, open } = this.state;
-    const targetlist = ["/", "/search/", "/tag/", "/about/"]
+    const targetlist = ["/", "/search/", "/tag/", "/about/"];
 
     pages = pages.filter(hasMenuTitle);
     typeof window !== `undefined` && (
       post = posts.find(element => element.node.fields.slug == decodeURI(window.location.pathname)));
     typeof window !== `undefined` && (
-      flag = targetlist.some((v) => v === window.location.pathname));
+      flag = targetlist.some((v) => v == window.location.pathname));
     return (
       <nav className={classes.topMenu}>
         <Manager>
