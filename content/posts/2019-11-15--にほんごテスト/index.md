@@ -8,9 +8,40 @@ category: test
 cover: markdown.png
 ---
 
-# 日本語とKaTeX
+# [Dropbox Paper](https://paper.dropbox.com/)で使うmarkdown
+##　リスト
+### 番号つき
+1. aa
+2. bb
+
+### 箇条書き
+- cc
+- dd
+
+### タスク
+- [ ] ee
+- [x] ff
+
+## 書式
+**太字**と _斜体_ と ~~取り消し~~
+
+## 引用
+> blockquote
+>
+> > nested blockquote
+>
+> more quotes
+
+## コード
+`コード`
+
+```python
+print("コードブロック")
+```
+
+## KaTeX
 インライン数式$E=mc^2$\
-アウトライン数式(とりあえず参照なし)
+アウトライン数式(参照なし)
 
 $$
 A = \left( \begin{array}{cccc}
@@ -21,5 +52,25 @@ a_{m1} & a_{m2} & \ldots & a_{mn}
 \end{array} \right) \tag{matrix}
 $$
 
+---
 
-以下は https://gist.github.com/brandonkal/81aef71276a54536951c0f205797999c#file-markdown-reference-md より
+# その他
+## 表
+| Left align | Right align | Center align |
+| :--------- | ----------: | :----------: |
+| This       |        This |     This     |
+| column     |      column |    column    |
+| will       |        will |     will     |
+| be         |          be |      be      |
+| left       |       right |    center    |
+| aligned    |     aligned |   aligned    |
+
+## 画像
+### ローカル
+![markdown](./markdown.png)
+
+### リモート
+
+## embed
+
+https://mizchi.hatenablog.com/entry/2018/10/23/221446
