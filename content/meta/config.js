@@ -21,7 +21,7 @@ module.exports = {
   manifestStartUrl: "/",
   manifestBackgroundColor: colors.background,
   manifestThemeColor: colors.background,
-  manifestDisplay: "standalone",
+  manifestDisplay: "minimal-ui",
   // contact
   contactEmail: "iori-kurata636@g.ecc.u-tokyo.ac.jp",
   // social
