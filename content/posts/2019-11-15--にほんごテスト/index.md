@@ -9,16 +9,18 @@ cover: markdown.png
 ---
 
 # 日本語とKaTeX
-インライン数式$E=mc^2$  
-アウトライン数式(とりあえず参照なし)  
+インライン数式$E=mc^2$\
+アウトライン数式(とりあえず参照なし)
+
 $$
-A = \left( \begin{array}{cccc} 
-a_{11} & a_{12} & \ldots & a_{1n} \\ 
+A = \left( \begin{array}{cccc}
+a_{11} & a_{12} & \ldots & a_{1n} \\
 a_{21} & a_{22} & \ldots & a_{2n} \\
 \vdots & \vdots & \ddots & \vdots \\
-a_{m1} & a_{m2} & \ldots & a_{mn} 
+a_{m1} & a_{m2} & \ldots & a_{mn}
 \end{array} \right) \tag{matrix}
-$$  
+$$
+
 以下は https://gist.github.com/brandonkal/81aef71276a54536951c0f205797999c#file-markdown-reference-md より
 
 # NOTE: This "post" is based on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Gatsby Sites.
