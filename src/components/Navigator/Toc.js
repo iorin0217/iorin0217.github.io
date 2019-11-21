@@ -263,7 +263,7 @@ class Toc extends React.Component {
                         onClick={linkOnClick}
                     >
                         <div className={classes.listItemText}>
-                            <h1>{post.node.fields.slug},{utf8.decode(window.location.pathname)}</h1>
+                            <h1>{post.node.fields.slug},{decodeURI(window.location.pathname)}</h1>
                         </div>
                     </Link>
                 }
