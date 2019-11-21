@@ -245,20 +245,11 @@ class Toc extends React.Component {
 
     render() {
         const { classes, post, linkOnClick } = this.props;
-
-        return (
-            <li
-                className={`${classes.listItem} ${post.node.frontmatter.category}`}
-                style={{ display: `${this.state.hidden ? "none" : "block"}` }}
-                key={post.node.fields.slug}
-            >
-                {typeof window !== `undefined` &&
-                    post.node.fields.slug == decodeURI(window.location.pathname) &&
-                    <div dangerouslySetInnerHTML={{
-                        __html: query.data.allMarkdownRemark.edges[0].node.tableOfContents
-                    }} />
-                }
-            </li>
+        return (typeof window !== `undefined` &&
+            post.node.fields.slug == decodeURI(window.location.pathname) &&
+            <div dangerouslySetInnerHTML={{
+                __html: post.node.tableOfContents
+            }} />
         );
     }
 }
