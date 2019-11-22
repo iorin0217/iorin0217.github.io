@@ -76,8 +76,7 @@ const Main = props => {
 
   return (
     <main className={classes.main}>
-      {/*<SpringScrollbars>{children}</SpringScrollbars>*/}
-      {children}
+      <SpringScrollbars>{children}</SpringScrollbars>
     </main>
   );
 };
